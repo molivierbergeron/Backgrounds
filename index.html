@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Galerie des backgrounds Teams, classés par round." />
+    <title>Backgrounds Teams</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a365d'/%3E%3Cpath d='M14 17h36v30H14z' fill='%23e7f0fa'/%3E%3Cpath d='M14 17h36v7H14z' fill='%234a90e2'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Collection</p>
+        <h1>Backgrounds Teams</h1>
+      </div>
+      <p class="header-note">Choisissez une image pour l’agrandir ou télécharger l’original.</p>
+    </header>
+
+    <nav class="round-nav" aria-label="Accès rapide aux rounds" id="round-nav"></nav>
+    <main id="gallery"></main>
+
+    <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+      <div class="viewer-bar">
+        <p id="viewer-title"></p>
+        <div class="viewer-actions">
+          <a id="viewer-download" class="download-link" download>Télécharger l’original</a>
+          <button class="icon-button" id="viewer-close" type="button" aria-label="Fermer">×</button>
+        </div>
+      </div>
+      <button class="viewer-nav previous" id="viewer-previous" type="button" aria-label="Image précédente">‹</button>
+      <img id="viewer-image" alt="" />
+      <button class="viewer-nav next" id="viewer-next" type="button" aria-label="Image suivante">›</button>
+    </dialog>
+
+    <script src="gallery-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
